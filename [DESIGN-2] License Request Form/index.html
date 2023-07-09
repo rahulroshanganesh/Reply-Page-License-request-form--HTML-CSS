@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Request Form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*
+{
+    font-family: 'Raleway', sans-serif;
+}
+body
+{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    margin: 0;
+    background-color: antiquewhite;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    padding-bottom: 2rem;
+}
+h1
+{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 10;
+    border-bottom: black solid 1px;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+h2
+{
+    font-size: 1rem;
+}
+.form-label
+{
+    display:block;
+    margin-bottom: 5px;
+}
+.form-input
+{
+    margin-bottom: 10px;
+    border-style:none;
+    border: grey solid 1px;
+    border-radius: 3px;
+    font-size: large;
+}
+.form-input[type="text"]
+{
+    width: 30%;
+    height:30px;
+}
+textarea
+{
+    width: 55%;
+    height: 90px;
+}
+span
+{
+    color: red;
+    font-size: 30px;
+}
+.container p
+{
+    font-size: 0.8rem;
+    max-width: 51rem;
+}
+.accept
+{
+    line-height: 1.8rem;
+    font-weight: bolder;
+}
+[type='button']
+{
+    padding: 1rem 2rem 1rem 2rem;
+    color: white;
+    background-color: grey;
+    border-radius: 3px;
+    border: grey solid 1px;
+}
+#caution
+{
+    border-top: black solid 1px;
+    padding:0 1rem 0 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+#credits
+{
+    text-align: right;
+    font-size: 10px;
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <h1>License Request Form</h1>
+    <div class="container">
+        <h2>I am interested in discussing the Licensing of your Citisales & Leasing (licensing) of your BRAND NAME. I hereby accept the NON-COMPETE/NON DISCLOSURE TERMS of this application and warrant that I am a grade. I License holder</h2>
+        <form>
+            <label for="name" class="form-label">Name<span>*</span></label>
+            <input type="text" id="name" class="form-input" required>
+
+            <label for="c-t" class="form-label">Company &amp; Title (if applicable)</label>
+            <input type="text" id="c-t" class="form-input">
+            
+            <label for="addr" class="form-label">Address<span>*</span></label>
+            <textarea id="addr" name="addr" rows="4" cols="50" class="form-input" required></textarea>
+            
+            <label for="Email" class="form-label">Email<span>*</span></label>
+            <input type="text" id="Email" class="form-input" required>
+            
+            <label for="plp" class="form-label">Proposed License Purpose<span>*</span></label>
+            <textarea id="plp" name="Proposed License Purpose" rows="4" cols="50" class="form-input"></textarea>
+            
+            <p>Please provide a description of how Licensee proposes to use the Licensed Marks (where the marks will be used, on what materials/websites, etc., the purpose of such materials/websites, etc., and any other details that might be helpful for the Trust to consider the request and to define the scope of the eventual license grant).</p>
+            <h3>Please indicate which Licensee is requesting a license to use: <span>*</span></h3>
+            <div class="accept">
+            <input type="checkbox" id="agree1" name="agree1" value="sales&lease">
+            <label id="agree1">Sales & Leasing (Residential, Comm., Industrial)</label><br>
+
+            <input type="checkbox" id="agree2" name="agree2" value="sales&leaseb">
+            <label id="agree2">Sales & Leasing (Residential, Comm., Industrial)</label><br>
+
+            <input type="checkbox" id="agree3" name="agree3" value="Busi-broker">
+            <label id="agree3">Business broker only</label><br>
+
+            <input type="checkbox" id="agree4" name="agree4" value="buyersagent">
+            <label id="agree4">Buyers agent only</label><br>
+
+            <input type="checkbox" id="agree5" name="agree5" value="prop-mange">
+            <label id="agree5">Property management (to include strata)</label><br>
+
+            <input type="checkbox" id="agree6" name="agree6" value="legal">
+            <label id="agree6">Legal (solicitor, paralegal, conveyancing)</label><br>
+
+            <input type="checkbox" id="agree7" name="agree7" value="tradie">
+            <label id="agree7">Tradie license (all of building & construction)</label><br>
+
+            <input type="checkbox" id="agree8" name="agree8" value="service">
+            <label id="agree8">Services license (Transport, Removalist, etc)</label><br>
+
+            <input type="checkbox" id="agree9" name="agree9" value="investor">
+            <label id="agree9">Investor only (I wish to invest a min $10K in your business)</label><br>
+
+            <input type="checkbox" id="agree10" name="agree10" value="sales&leaseb">
+            <label id="agree10">Internal licensee to develop your business in my country/internationally</label><br>
+        </div>
+        <br><br>
+            <label for="plt">Proposed License Term <span>*</span> </label>
+            <input type="text" id="plt">
+
+            <p id="end">Please indicate the duration (from what date to what date, using YYYY-MM-DD) Licensee is requesting to use the Proposed Licensed Marks for the Proposed License Purpose.</p>
+
+            <input type="button" value="SUBMIT">
+
+        </form>
+    </div>
+    <div id="caution">
+        <p>
+            NOTE: No license will be granted until the Trademark License Agreement has been countersigned and accepted by the BRAND Trust.
+        </p>
+        <p>
+            ANY USE OF ANY BRAND TRUST TRADEMARK, SERVICE MARK, TRADE NAME OR LOGO WITHOUT A VALID LICENSE MAY CONSTITUTE AN INFRINGEMENT OF IETF TRUST’S INTELLECTUAL PROPERTY RIGHTS AND SUBJECT TO YOU LEGAL ACTION AND DAMAGES.
+        </p>
+        <p>&copy; BRAND-NAME 2023</p>
+        </div>
+        <p id="credits">By RAHUL ROSHAN GANESH 05 July 2023</p>
+</body>
+</html>

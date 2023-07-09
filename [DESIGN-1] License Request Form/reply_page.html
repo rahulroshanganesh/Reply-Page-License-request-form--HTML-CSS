@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0137)file:///C:/Users/samga/OneDrive/Desktop/__pycache__/reply_page/index.html?options=option6&options=option7&options=option8&options=option9 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Checkbox Example</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+
+input[type="checkbox"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+h1{
+    color: #2596BE;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    background-color:whitesmoke;
+    font-size: large;
+}
+#email ,#phone
+{
+    width: 100vh;
+}
+input[type='text'], input[type='email'], input[type='tel']
+{
+    width: 50vh;
+    height: 5vh;
+    text-align: center;
+    border-radius: 5px;
+}
+.option
+{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 60vh;
+    text-align: left;
+    background-color:antiquewhite;
+    border-radius: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.cover-option
+{
+    background-color:aliceblue;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+.wish
+{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+button
+{
+    padding: 1rem;
+    /* background-color: rgb(37, 150, 190); */
+    background-color: #2596BE;
+    border-radius: 1rem;
+}
+  </style>
+</head>
+<body>
+<h1>LICENSE REQUEST FORM</h1>
+  <form>
+    
+    <p>I am interested in discussing the Licensing of your Citisales &amp; Leasing (licensing) of your BRAND NAME.</p>
+    <label>
+        <input type="checkbox" name="accept" value="accept"> I hereby accept the NON-COMPETE/NON DISCLOSURE TERMS of this application and warrant that I am a grade
+    </label>
+<br><br>
+  </form>
+  <form id="checkbox-form">
+    <p>I License holder,</p>
+    <input type="text" placeholder="STATE">
+    <input type="text" placeholder="LICENSE NO.">
+    <br><br>
+<div class="cover-option">
+<p class="wish">I wish to apply for the following License(S)</p>
+
+    <div class="option">
+    <label>
+      <input type="checkbox" name="option" value="option1"> Sales &amp; Leasing (Residential, Comm., Industrial)
+    </label><br>
+    <label>
+      <input type="checkbox" name="option" value="option2"> Sales &amp; Leasing (to include Business sales)
+    </label><br>
+    <label>
+      <input type="checkbox" name="option" value="option3"> Business broker only
+    </label><br>
+    <label>
+        <input type="checkbox" name="option" value="option4"> Buyers agent only
+      </label><br>
+      <label>
+        <input type="checkbox" name="option" value="option5"> Property management (to include strata)
+      </label><br>
+      <label>
+        <input type="checkbox" name="option" value="option6"> Legal (solicitor, paralegal, conveyancing)
+      </label><br>
+      <label>
+        <input type="checkbox" name="option" value="option7"> Tradie license (all of building &amp; construction)
+      </label><br>
+      <label>
+        <input type="checkbox" name="option" value="option8"> Services license (Transport, Removalist, etc)
+      </label><br>
+      <label>
+        <input type="checkbox" name="option" value="option9"> Investor only (I wish to invest a min $10K in your business)
+      </label><br>
+      <label>
+        <input type="checkbox" name="option" value="option10"> Internal licensee to develop your business in my country/internationally
+      </label>
+    </div>
+    </div>
+
+      <br>
+      <br><br>
+      <input type="text" name="FirstName" placeholder="FIRST NAME">
+      <input type="text" name="LastName" placeholder="LAST NAME">
+      <br><br>
+      <input type="email" name="email" id="email" placeholder="EMAIL"><br><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="PHONE NUMBER">
+
+      <br><br>
+      <button type="submit">SEND REQUEST</button>
+  </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the form and all the checkboxes
+      const form = document.getElementById('checkbox-form');
+      const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+
+      // Add an event listener to the form
+      form.addEventListener('change', function(event) {
+        const checkedCount = form.querySelectorAll('input[type="checkbox"]:checked').length;
+
+        // Disable or enable checkboxes based on the checked count
+        checkboxes.forEach(function(checkbox) {
+          checkbox.disabled = checkedCount >= 3 && !checkbox.checked;
+        });
+      });
+    });
+  </script>
+
+
+</body></html>
